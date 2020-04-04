@@ -1,0 +1,18 @@
+1. Copy paste every file I sent into a folder  
+2. Install visual studio
+3. Open the folder from Step 1 in visual studio
+4. Open the terminal and type cmd and install everything needed as mentioned in the link ( https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/ ) i.e. pytesseract, tesseract-ocr, flask, pipenv, pillow, textract, pyocr.
+5. After installing virtualenv, in the cmd type 
+virtual env
+Here env is the environment name. Make sure Python scripts and teseract ocr is added to the path in environment variables.
+6. Write the following to activate the environment in the terminal (cmd):
+env\Scripts\activate.bat
+You should get the name of your environment in paranthesis in the cmd in the start of the line now. Something like this... (env) C:\Users\jencr\OneDrive\Desktop\Image to Text>
+7. Now, 
+pip install flask flask-sqlalchemy 
+in the cmd. Idk why we do this but I referred to a video on youtube 
+8. To run the code now, type
+python filename.py
+In our case,
+python pyt.py
+in Visual studios terminal i.e. our cmd
