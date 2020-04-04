@@ -16,3 +16,7 @@ python filename.py
 In our case,
 python pyt.py
 in Visual studios terminal i.e. our cmd
+
+NOTE: 
+-Make a navigation bar where in, the home page we upload stuff and convert the images to text and make another page displaying our details
+-Make sure all HTML files are stored in the templates folder and add all images to the img folder.
