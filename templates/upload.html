@@ -1,25 +1,39 @@
-#Do edit this, make it pretty
-
 <!DOCTYPE html>
 <html>
  <head>
    <title>Upload Image</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
+  <header>
+      <div class="main">
+        <div class="logo">
+          <img src="logo.png">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="upload">
+        <h3>Upload image here</h3>
+      </div>
 
-   {% if msg %}
-   <h1>{{ msg }}</h1>
-   {% endif %}
-  
-   <h1>Upload new File</h1>
-  
-   <form method=post enctype=multipart/form-data>
-     <p><input type=file name=file>
-        <input type=submit value=Upload>
-   </form>
 
-   <h1>Result:</h1>
-   {% if img_src %}
+      <!--    % if msg %}
+      <h1>{{ msg }}</h1>
+      {% endif %}     -->
+
+          <form method=post enctype=multipart/form-data>
+            <div class="button">
+            <div class="box"><input type=file name=file value="Choose file"></div></br></br>
+            <input type=submit value=Upload>
+          </div></form>
+
+      <div class="result">
+        <h3>Result: </h3>
+
+         <!-- {% if img_src %}
      <img src="{{ img_src }}">
    {% endif %}
   
@@ -28,6 +42,12 @@
   
    {% else %}
      The extracted text will be displayed here
-   {% endif %}
+   {% endif %}         -->
+      </div>
+  
+
+  
+
+    </header>
  </body>
 </html>
