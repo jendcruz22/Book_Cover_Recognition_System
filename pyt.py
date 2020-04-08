@@ -40,7 +40,7 @@ def upload_page():
             extracted_text = ocr_core(file)
 
             # extract the text and display it
-            return render_template('upload.html', msg='Successfully processed',extracted_text=extracted_text,img_src=UPLOAD_FOLDER + file.filename)
+            return render_template('upload.html',extracted_text=extracted_text,img_src=UPLOAD_FOLDER + file.filename)
     elif request.method == 'GET':
         return render_template('upload.html')
 
