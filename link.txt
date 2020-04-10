@@ -1,3 +1,0 @@
-https://github.com/stephanedhml/ML-letter-recognition
-https://github.com/WeimianLI/Bayes-Classfier
-https://github.com/katuskaa/letterRecognition
