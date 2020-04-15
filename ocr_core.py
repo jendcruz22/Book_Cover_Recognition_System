@@ -14,6 +14,6 @@ def ocr_core(filename):
     text= tess.image_to_string(img)
     return(text)
 
-print(ocr_core('img/example_01.png'))
+# print(ocr_core('img/example_01.png'))
 
 
