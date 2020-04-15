@@ -12,11 +12,16 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return render_template('upload.html')
+
 # function to check the file extension
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+        
 # route and function to handle the home page
 # @app.route('/')
 # def home_page():
@@ -43,6 +48,10 @@ def upload_page():
             return render_template('upload.html',extracted_text=extracted_text,img_src=UPLOAD_FOLDER + file.filename)
     elif request.method == 'GET':
         return render_template('upload.html')
+
+@app.route('/about/')
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run()
