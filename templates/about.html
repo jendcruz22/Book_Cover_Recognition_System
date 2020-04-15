@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+.about{
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.about h1{
+	color: #000;
+	font-size: 28px;
+}
+    </style>
+    
+    </head>
+
+    <body>
+        {% extends "index.html" %}
+        {% block content %}     
+
+          <div class="about">
+            <h1>About Us</h1>
+          </div>
+
+          <div class="table">
+            <table role="presentation" border="0"  cellpadding="0" align="center" width="100%">
+                <tr>
+                </br></br></br></br></br></br>
+                <th><br><br><br><br><br>
+                    <font size="5" color="black">
+                    
+            <div class="text">
+                <h3>
+                    This is a book recognition system that can be used to identify a book by its cover image.
+                    
+                </h3>
+            </div>
+
+          </font>
+          </th></tr>
+        </table></div>
+        {% endblock %}
+    </body>
+</html>
+
