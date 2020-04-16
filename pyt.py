@@ -21,13 +21,6 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-        
-# route and function to handle the home page
-# @app.route('/')
-# def home_page():
-#     return render_template('index.html')
-
-# route and function to handle the upload page
 @app.route('/',methods=['GET', 'POST'])
 def upload_page():
     if request.method == 'POST':
