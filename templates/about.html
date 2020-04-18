@@ -1,66 +1,52 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>About Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-
-
 .about{
 	position: absolute;
 	top: 18%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-
 .about h1{
     color: #000;
     font-size: 25px;
     text-decoration: underline;
 }
-
 .text h3{
     font-size: 20px;
     text-align: center;
 }
-
 table, th,td{
     border: 1px solid black;
     border-collapse: collapse;
 }
-
 th,td{
     padding: 10px;
     text-align: center;
     font-size: 20px;
 }
-
     </style>
-    
     </head>
-
     <body>
         {% extends "index.html" %}
         {% block content %}     
-
           <div class="about">
             <h1>About Us</h1>
           </div>
-
           <div class="table">
             <table role="presentation" border="0"  cellpadding="0" align="center" width="100%">
                 <tr>
                 </br></br></br></br></br>
-                <th>
-                    
+                <th>    
             <div class="text">
                 <h3>
                     <br><p>Hey there, We created this web application which reads the text off of a book cover. </p>
                     <p>Image recognition, in the context of machine learning, is the ability of software to identify objects, places, people, writing and actions in images. In this project we applied Optical Character Recognition (OCR) to images using Tesseract and Python.</p>
                     <p>This application detects text of different font styles and sizes to help reading text off of a cover. For instance this can be applied in various applications such as on images uploaded on ecommerce websites to read text which makes random book recognition easier while shopping online.</p>
                     <br>
-                    
                     <table style="width: 100%;">
                         <caption>Our details: </caption><br>
                         <tr>
@@ -82,7 +68,6 @@ th,td{
                     </table>
                 </h3>
             </div>
-
           </font>
           </th></tr>
         </table></div>
