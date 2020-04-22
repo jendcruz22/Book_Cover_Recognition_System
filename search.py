@@ -9,7 +9,7 @@ tesscsv = "tess.csv"
 fields = [] 
 rows = [] 
 
-text="Sophia Meas"
+# text="Sophia Meas"
 
 # reading csv file 
 with open(tesscsv, 'r') as csvfile: 
