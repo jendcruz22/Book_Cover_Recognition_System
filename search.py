@@ -1,4 +1,3 @@
-
 # importing csv module 
 import csv 
   
@@ -9,7 +8,7 @@ tesscsv = "tess.csv"
 fields = [] 
 rows = [] 
 
-# text="Sophia Meas"
+text="ONE WORD BUT MANY TONGUES CONFESSIONS OF A MULTICULTURALIS: MATTHEW J, MOTYKA".lower().replace(',','').replace(' ','').replace('_','').replace(':','').replace('=','').replace('(','').replace(')','').replace('"','').replace('|','').replace('#','').replace('$','').replace('&','').replace('0','').replace('1','').replace('2','').replace('3','').replace('4','').replace('5','').replace('6','').replace('7','').replace('8','').replace('9','')
 
 # reading csv file 
 with open(tesscsv, 'r') as csvfile: 
@@ -29,4 +28,3 @@ for row in rows[:n]:
         if col == text:
             print("Name of the book: "+row[1]) 
             print("Author: "+row[2])
-        
