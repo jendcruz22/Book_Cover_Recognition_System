@@ -27,4 +27,4 @@ for row in rows[:n]:
     for col in row: 
         if col == text:
             print("Name of the book: "+row[1]) 
-            print("Author: "+row[2])
+            print("Author: "+row[2]
