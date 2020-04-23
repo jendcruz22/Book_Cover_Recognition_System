@@ -8,3 +8,4 @@ def ocr_core(filename):
     return(text)
 
 print(ocr_core('img/4.jpg'))
+

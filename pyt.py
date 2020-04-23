@@ -15,17 +15,17 @@ tesscsv = "tess.csv"
 # import our OCR function
 from ocr_core import ocr_core
 
-# define a folder to store and later serve the images
-UPLOAD_FOLDER = '/static/uploads/'
-
-# allow files of a specific type
-ALLOWED_EXTENSIONS = set(['jfif','png', 'jpg', 'jpeg'])
-
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return render_template('upload.html')
+
+# define a folder to store and later serve the images
+UPLOAD_FOLDER = '/static/uploads/'
+
+# allow files of a specific type
+ALLOWED_EXTENSIONS = set(['jfif','png', 'jpg', 'jpeg'])
 
 # function to check the file extension
 def allowed_file(filename):
