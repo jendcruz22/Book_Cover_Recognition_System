@@ -1,5 +1,6 @@
+import string
 str1 = input("Please Enter your Own String : ")
-str1.replace(' ','')
+str1 = str1.lower().replace(' ','')
 print(str1)
 total = 0
  

@@ -7,5 +7,5 @@ def ocr_core(filename):
     text= tess.image_to_string(img)
     return(text)
 
-print(ocr_core('img/4.jpg'))
+print(ocr_core('accuracy/images/theatre.jpg'))
 
