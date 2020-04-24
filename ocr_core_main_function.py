@@ -3,7 +3,7 @@ import string
 tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 from PIL import Image
 
-img = Image.open('accuracy/images/New folder/14.jpg')
+img = Image.open('accuracy/images/New folder/19.jfif')
 text= tess.image_to_string(img)
 # print(text)
 
