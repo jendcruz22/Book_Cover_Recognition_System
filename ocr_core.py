@@ -18,4 +18,6 @@ def ocr_core(filename):
             for col in row:
                 if col==text:
                     return("\nName of the Book: "+row[1]+"Author: "+row[2])
+                else:
+                    return(tess.pytesseract.image_to_string(Image.open(filename)))
 
